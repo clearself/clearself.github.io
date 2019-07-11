@@ -15,21 +15,31 @@
 
 
 
-<meta name="description" content="MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写。旨在为 WEB 应用提供可扩展的高性能数据存储解决方案。是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。">
-<meta name="keywords" content="mongo">
+<meta name="description" content="初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。以下为搭建步骤：">
+<meta name="keywords" content="服务器搭建ftp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mongo在window下安装配置与启动">
-<meta property="og:url" content="http://clearself.github.io/2017/10/20/mongo/index.html">
+<meta property="og:title" content="windows server 2008R2 搭建ftp环境">
+<meta property="og:url" content="http://clearself.github.io/2017/05/24/setFtp/index.html">
 <meta property="og:site_name" content="clearself的博客">
-<meta property="og:description" content="MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写。旨在为 WEB 应用提供可扩展的高性能数据存储解决方案。是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。">
-<meta property="og:image" content="https://clearself.github.io/image/mongo_1.png">
-<meta property="og:image" content="https://clearself.github.io/image/mongo_2.png">
-<meta property="og:image" content="https://clearself.github.io/image/mongo_3.png">
-<meta property="og:updated_time" content="2017-10-23T03:16:15.105Z">
+<meta property="og:description" content="初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。以下为搭建步骤：">
+<meta property="og:image" content="http://img0.tuicool.com/uaM7fm.jpg!web">
+<meta property="og:image" content="http://img2.tuicool.com/UnaUfy.jpg!web">
+<meta property="og:image" content="http://img2.tuicool.com/yuIJFr.jpg!web">
+<meta property="og:image" content="http://img2.tuicool.com/YrumAz.jpg!web">
+<meta property="og:image" content="http://img0.tuicool.com/ZjUfMv.jpg!web">
+<meta property="og:image" content="http://img2.tuicool.com/qaAzqye.jpg!web">
+<meta property="og:image" content="http://img1.tuicool.com/z6rAjq6.jpg!web">
+<meta property="og:image" content="http://img2.tuicool.com/mQVNBj.jpg!web">
+<meta property="og:image" content="http://img2.tuicool.com/mmEnqeY.jpg!web">
+<meta property="og:image" content="http://images.cnitblog.com/blog/604780/201411/241443332626680.png">
+<meta property="og:image" content="http://images.cnitblog.com/blog/604780/201411/241436275749697.png">
+<meta property="og:image" content="http://images.cnitblog.com/blog/604780/201411/241444123712465.png">
+<meta property="og:image" content="http://images.cnitblog.com/blog/604780/201411/241447459493150.png">
+<meta property="og:updated_time" content="2019-07-11T07:05:04.530Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mongo在window下安装配置与启动">
-<meta name="twitter:description" content="MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写。旨在为 WEB 应用提供可扩展的高性能数据存储解决方案。是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。">
-<meta name="twitter:image" content="https://clearself.github.io/image/mongo_1.png">
+<meta name="twitter:title" content="windows server 2008R2 搭建ftp环境">
+<meta name="twitter:description" content="初次搭建ftp服务环境时也多少遇到一些坑，下面就根据我的经验简单的介绍一下搭建的过程，以免再次搭建遇到相同的问题。以下为搭建步骤：">
+<meta name="twitter:image" content="http://img0.tuicool.com/uaM7fm.jpg!web">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -61,7 +71,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>mongo在window下安装配置与启动 | clearself的博客</title>
+<title>windows server 2008R2 搭建ftp环境 | clearself的博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -253,11 +263,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-mongo" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-setFtp" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/10/20/mongo/" class="article-date">
-      <time datetime="2017-10-20T08:05:58.000Z" itemprop="datePublished">2017-10-20</time>
+      <a href="/2017/05/24/setFtp/" class="article-date">
+      <time datetime="2017-05-24T01:33:02.000Z" itemprop="datePublished">2017-05-24</time>
 </a>
 
 
@@ -272,7 +282,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      mongo在window下安装配置与启动
+      windows server 2008R2 搭建ftp环境
     </h1>
   
 
@@ -283,7 +293,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mongo/">mongo</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/服务器搭建ftp/">服务器搭建ftp</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -293,9 +303,30 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h3 id="mongodb的安装-window下"><a href="#mongodb的安装-window下" class="headerlink" title="mongodb的安装 window下"></a>mongodb的安装 window下</h3><h5 id="在官网上下载zip，这个我装在D盘的mongoDB目录下"><a href="#在官网上下载zip，这个我装在D盘的mongoDB目录下" class="headerlink" title="在官网上下载zip，这个我装在D盘的mongoDB目录下"></a>在官网上下载zip，这个我装在D盘的mongoDB目录下</h5><h5 id="1、在D盘中创建-mongoDB-文件夹然后把下载的包解压后把其中的-bin-文件夹拷贝到创建的-mongoDB-文件夹中，并且将bin文件夹所在路径配置到环境变量PATH中用-号分开"><a href="#1、在D盘中创建-mongoDB-文件夹然后把下载的包解压后把其中的-bin-文件夹拷贝到创建的-mongoDB-文件夹中，并且将bin文件夹所在路径配置到环境变量PATH中用-号分开" class="headerlink" title="1、在D盘中创建 mongoDB 文件夹然后把下载的包解压后把其中的 bin 文件夹拷贝到创建的 mongoDB 文件夹中，并且将bin文件夹所在路径配置到环境变量PATH中用;号分开"></a>1、在D盘中创建 mongoDB 文件夹然后把下载的包解压后把其中的 bin 文件夹拷贝到创建的 mongoDB 文件夹中，并且将bin文件夹所在路径配置到环境变量PATH中用;号分开</h5><h5 id="2、然后在-mongoDB文件夹中创建一个-data-文件夹，再在-data-文件夹中创建-db-文件夹"><a href="#2、然后在-mongoDB文件夹中创建一个-data-文件夹，再在-data-文件夹中创建-db-文件夹" class="headerlink" title="2、然后在 mongoDB文件夹中创建一个 data 文件夹，再在 data 文件夹中创建 db 文件夹"></a>2、然后在 mongoDB文件夹中创建一个 data 文件夹，再在 data 文件夹中创建 db 文件夹</h5><h5 id="3、然后在-mongoDB文件夹中创建一个-log-文件夹，再在-log-文件夹中创建-mongoDB-log文件"><a href="#3、然后在-mongoDB文件夹中创建一个-log-文件夹，再在-log-文件夹中创建-mongoDB-log文件" class="headerlink" title="3、然后在 mongoDB文件夹中创建一个 log 文件夹，再在 log 文件夹中创建 mongoDB.log文件"></a>3、然后在 mongoDB文件夹中创建一个 log 文件夹，再在 log 文件夹中创建 mongoDB.log文件</h5><h5 id="4、然后在-mongoDB文件夹中创建一个-mongodb-config文件-并配置如下图"><a href="#4、然后在-mongoDB文件夹中创建一个-mongodb-config文件-并配置如下图" class="headerlink" title="4、然后在 mongoDB文件夹中创建一个 mongodb.config文件 并配置如下图"></a>4、然后在 mongoDB文件夹中创建一个 mongodb.config文件 并配置如下图</h5><p><img src="https://clearself.github.io/image/mongo_1.png" alt="描述" title="图片描述"></p>
-<h5 id="打开cmd命令行进入到D-MongoDB-bin运行mongod-–config-D-MongoDB-mongodb-config-启动mongo服务"><a href="#打开cmd命令行进入到D-MongoDB-bin运行mongod-–config-D-MongoDB-mongodb-config-启动mongo服务" class="headerlink" title="打开cmd命令行进入到D:\MongoDB\bin运行mongod –config D:\MongoDB\mongodb.config 启动mongo服务"></a>打开cmd命令行进入到D:\MongoDB\bin运行mongod –config D:\MongoDB\mongodb.config 启动mongo服务</h5><p><img src="https://clearself.github.io/image/mongo_2.png" alt="描述" title="图片描述"></p>
-<h5 id="再打开-个cmd命令-运行-mongo就会出现下图所示说明你的mongo已经运行了"><a href="#再打开-个cmd命令-运行-mongo就会出现下图所示说明你的mongo已经运行了" class="headerlink" title="再打开-个cmd命令 运行 mongo就会出现下图所示说明你的mongo已经运行了"></a>再打开-个cmd命令 运行 mongo就会出现下图所示说明你的mongo已经运行了</h5><p><img src="https://clearself.github.io/image/mongo_3.png" alt="描述" title="图片描述"></p>
+        <h5 id="1-、添加-FTP-发布服务："><a href="#1-、添加-FTP-发布服务：" class="headerlink" title="1 、添加 FTP 发布服务："></a>1 、添加 FTP 发布服务：</h5><p><code>a)、打开服务器管理“开始——管理工具——服务器管理——角色”添加Web服务器(IIS)角色安装ftp服务。</code></p>
+<p><img src="http://img0.tuicool.com/uaM7fm.jpg!web" alt="描述" title="图片描述"></p>
+<p><img src="http://img2.tuicool.com/UnaUfy.jpg!web" alt="描述" title="图片描述"></p>
+<p><code>b)在选择服务器角色页面勾选 “Web 服务器 (IIS)” ，下一步：</code></p>
+<p><img src="http://img2.tuicool.com/yuIJFr.jpg!web" alt="描述" title="图片描述"></p>
+<p><code>c)web 服务器简介及相关注意事项：</code></p>
+<p><img src="http://img2.tuicool.com/YrumAz.jpg!web" alt="描述" title="图片描述"></p>
+<p><code>d) 、在角色服务界面勾选 ”FTP 服务器 ” 及附属选项：</code></p>
+<p><img src="http://img0.tuicool.com/ZjUfMv.jpg!web" alt="描述" title="图片描述"></p>
+<p><code>摘要信息确认</code></p>
+<p><img src="http://img2.tuicool.com/qaAzqye.jpg!web" alt="描述" title="图片描述"></p>
+<p><code>e) 、在角色服务界面勾选 ”FTP 服务器 ” 及附属选项：</code></p>
+<p><img src="http://img1.tuicool.com/z6rAjq6.jpg!web" alt="描述" title="图片描述"></p>
+<h5 id="2、添加-FTP-站点："><a href="#2、添加-FTP-站点：" class="headerlink" title="2、添加 FTP 站点："></a>2、添加 FTP 站点：</h5><p><img src="http://img2.tuicool.com/mQVNBj.jpg!web" alt="描述" title="图片描述"></p>
+<h5 id="3、添加站点及路径信息：注（ftp文件上传目录）"><a href="#3、添加站点及路径信息：注（ftp文件上传目录）" class="headerlink" title="3、添加站点及路径信息：注（ftp文件上传目录）"></a>3、添加站点及路径信息：注（ftp文件上传目录）</h5><p><code>填写FTP站点名称（随便起个名称），并选择共享的文件夹。</code></p>
+<p><img src="http://img2.tuicool.com/mmEnqeY.jpg!web" alt="描述" title="图片描述"></p>
+<h5 id="4、绑定IP和SSL设置"><a href="#4、绑定IP和SSL设置" class="headerlink" title="4、绑定IP和SSL设置"></a>4、绑定IP和SSL设置</h5><p><code>IP不填默认为所有IP都可以访问，此步由于没有SSL证书所以选择无。</code></p>
+<p><img src="http://images.cnitblog.com/blog/604780/201411/241443332626680.png" alt="描述" title="图片描述"></p>
+<h5 id="5、添加ftp用户"><a href="#5、添加ftp用户" class="headerlink" title="5、添加ftp用户"></a>5、添加ftp用户</h5><p><code>打开服务器管理器----配置-----本地用户和组------用户，在其中添加用户，用于ftp</code></p>
+<p><img src="http://images.cnitblog.com/blog/604780/201411/241436275749697.png" alt="描述" title="图片描述"></p>
+<h5 id="6、给用户添加权限"><a href="#6、给用户添加权限" class="headerlink" title="6、给用户添加权限"></a>6、给用户添加权限</h5><p><code>指定用户ftpUser为在服务管理器——配置——用户,右键添加用户所创建的用户(包含设置ftp上传密码，用户名等)</code></p>
+<p><img src="http://images.cnitblog.com/blog/604780/201411/241444123712465.png" alt="描述" title="图片描述"></p>
+<h5 id="点击完成即完成了ftp站点的建立。"><a href="#点击完成即完成了ftp站点的建立。" class="headerlink" title="点击完成即完成了ftp站点的建立。"></a>点击完成即完成了ftp站点的建立。</h5><p><code>接下来可以再客户机中进行验证，看是否可以访问ftp文件，截图如下：</code></p>
+<p><img src="http://images.cnitblog.com/blog/604780/201411/241447459493150.png" alt="描述" title="图片描述"></p>
 
       
     </div>
@@ -304,13 +335,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/10/20/mongo/">mongo在window下安装配置与启动</a></p>
+        <p><span>本文标题:</span><a href="/2017/05/24/setFtp/">windows server 2008R2 搭建ftp环境</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">付雷洋</a></p>
-        <p><span>发布时间:</span>2017-10-20, 16:05:58</p>
-        <p><span>最后更新:</span>2017-10-23, 11:16:15</p>
+        <p><span>发布时间:</span>2017-05-24, 09:33:02</p>
+        <p><span>最后更新:</span>2019-07-11, 15:05:04</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/10/20/mongo/" title="mongo在window下安装配置与启动">http://clearself.github.io/2017/10/20/mongo/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://clearself.github.io/2017/10/20/mongo/　　作者: 付雷洋" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/05/24/setFtp/" title="windows server 2008R2 搭建ftp环境">http://clearself.github.io/2017/05/24/setFtp/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://clearself.github.io/2017/05/24/setFtp/　　作者: 付雷洋" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -323,15 +354,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2019/07/11/ueditor/">
-                    ueditor富文本编辑器前后端分离使用
+                <a href="/2017/05/24/setPHP/">
+                    windows server 2008R2 x64位服务器上搭建PHP环境
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2017/10/18/express/">
-                    express 生成项目
+                <a href="/2017/05/18/git/">
+                    Git、Github Pages 搭建博客基本操作
                 </a>
             </div>
         
@@ -343,7 +374,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#mongodb的安装-window下"><span class="toc-number">1.</span> <span class="toc-text">mongodb的安装 window下</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#在官网上下载zip，这个我装在D盘的mongoDB目录下"><span class="toc-number">1.0.1.</span> <span class="toc-text">在官网上下载zip，这个我装在D盘的mongoDB目录下</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1、在D盘中创建-mongoDB-文件夹然后把下载的包解压后把其中的-bin-文件夹拷贝到创建的-mongoDB-文件夹中，并且将bin文件夹所在路径配置到环境变量PATH中用-号分开"><span class="toc-number">1.0.2.</span> <span class="toc-text">1、在D盘中创建 mongoDB 文件夹然后把下载的包解压后把其中的 bin 文件夹拷贝到创建的 mongoDB 文件夹中，并且将bin文件夹所在路径配置到环境变量PATH中用;号分开</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、然后在-mongoDB文件夹中创建一个-data-文件夹，再在-data-文件夹中创建-db-文件夹"><span class="toc-number">1.0.3.</span> <span class="toc-text">2、然后在 mongoDB文件夹中创建一个 data 文件夹，再在 data 文件夹中创建 db 文件夹</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3、然后在-mongoDB文件夹中创建一个-log-文件夹，再在-log-文件夹中创建-mongoDB-log文件"><span class="toc-number">1.0.4.</span> <span class="toc-text">3、然后在 mongoDB文件夹中创建一个 log 文件夹，再在 log 文件夹中创建 mongoDB.log文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4、然后在-mongoDB文件夹中创建一个-mongodb-config文件-并配置如下图"><span class="toc-number">1.0.5.</span> <span class="toc-text">4、然后在 mongoDB文件夹中创建一个 mongodb.config文件 并配置如下图</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#打开cmd命令行进入到D-MongoDB-bin运行mongod-–config-D-MongoDB-mongodb-config-启动mongo服务"><span class="toc-number">1.0.6.</span> <span class="toc-text">打开cmd命令行进入到D:\MongoDB\bin运行mongod –config D:\MongoDB\mongodb.config 启动mongo服务</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#再打开-个cmd命令-运行-mongo就会出现下图所示说明你的mongo已经运行了"><span class="toc-number">1.0.7.</span> <span class="toc-text">再打开-个cmd命令 运行 mongo就会出现下图所示说明你的mongo已经运行了</span></a></li></ol></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-、添加-FTP-发布服务："><span class="toc-number">1.</span> <span class="toc-text">1 、添加 FTP 发布服务：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、添加-FTP-站点："><span class="toc-number">2.</span> <span class="toc-text">2、添加 FTP 站点：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3、添加站点及路径信息：注（ftp文件上传目录）"><span class="toc-number">3.</span> <span class="toc-text">3、添加站点及路径信息：注（ftp文件上传目录）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4、绑定IP和SSL设置"><span class="toc-number">4.</span> <span class="toc-text">4、绑定IP和SSL设置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5、添加ftp用户"><span class="toc-number">5.</span> <span class="toc-text">5、添加ftp用户</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6、给用户添加权限"><span class="toc-number">6.</span> <span class="toc-text">6、给用户添加权限</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#点击完成即完成了ftp站点的建立。"><span class="toc-number">7.</span> <span class="toc-text">点击完成即完成了ftp站点的建立。</span></a></li></ol>
         
     </div>
     <style>
@@ -379,7 +410,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"mongo在window下安装配置与启动　| clearself的博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"windows server 2008R2 搭建ftp环境　| clearself的博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -399,7 +430,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2019/07/11/ueditor/" title="上一篇: ueditor富文本编辑器前后端分离使用">
+            <a href="/2017/05/24/setPHP/" title="上一篇: windows server 2008R2 x64位服务器上搭建PHP环境">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -407,7 +438,7 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2017/10/18/express/" title="下一篇: express 生成项目">
+            <a href="/2017/05/18/git/" title="下一篇: Git、Github Pages 搭建博客基本操作">
                 <i class="fa fa-angle-right"></i>
             </a>
         

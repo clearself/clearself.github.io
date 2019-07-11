@@ -15,21 +15,26 @@
 
 
 
-<meta name="description" content="MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写。旨在为 WEB 应用提供可扩展的高性能数据存储解决方案。是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。">
-<meta name="keywords" content="mongo">
+<meta name="description" content="windows server 2008R2 x64位服务器上搭建PHP环境">
+<meta name="keywords" content="服务器搭建PHP环境">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mongo在window下安装配置与启动">
-<meta property="og:url" content="http://clearself.github.io/2017/10/20/mongo/index.html">
+<meta property="og:title" content="windows server 2008R2 x64位服务器上搭建PHP环境">
+<meta property="og:url" content="http://clearself.github.io/2017/05/24/setPHP/index.html">
 <meta property="og:site_name" content="clearself的博客">
-<meta property="og:description" content="MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写。旨在为 WEB 应用提供可扩展的高性能数据存储解决方案。是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。">
-<meta property="og:image" content="https://clearself.github.io/image/mongo_1.png">
-<meta property="og:image" content="https://clearself.github.io/image/mongo_2.png">
-<meta property="og:image" content="https://clearself.github.io/image/mongo_3.png">
-<meta property="og:updated_time" content="2017-10-23T03:16:15.105Z">
+<meta property="og:description" content="windows server 2008R2 x64位服务器上搭建PHP环境">
+<meta property="og:image" content="http://img.blog.csdn.net/20160314220851985">
+<meta property="og:image" content="http://img.blog.csdn.net/20160314220938048">
+<meta property="og:image" content="http://img.blog.csdn.net/20160314221038822">
+<meta property="og:image" content="http://img.blog.csdn.net/20160314221407258">
+<meta property="og:image" content="http://img.blog.csdn.net/20160314221453011">
+<meta property="og:image" content="http://files.jb51.net/file_images/article/201303/1436.jpg">
+<meta property="og:image" content="http://img1.ph.126.net/fpjBX80n5sJ7Wwic4IGlJQ==/6597216001703821191.jpg">
+<meta property="og:image" content="http://img5.ph.126.net/iXB7J9OPrYSfaxNuksLdzA==/6597494178144543105.jpg">
+<meta property="og:updated_time" content="2019-07-11T07:05:04.531Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mongo在window下安装配置与启动">
-<meta name="twitter:description" content="MongoDB 是一个基于分布式文件存储的数据库。由 C++ 语言编写。旨在为 WEB 应用提供可扩展的高性能数据存储解决方案。是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。">
-<meta name="twitter:image" content="https://clearself.github.io/image/mongo_1.png">
+<meta name="twitter:title" content="windows server 2008R2 x64位服务器上搭建PHP环境">
+<meta name="twitter:description" content="windows server 2008R2 x64位服务器上搭建PHP环境">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20160314220851985">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -61,7 +66,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>mongo在window下安装配置与启动 | clearself的博客</title>
+<title>windows server 2008R2 x64位服务器上搭建PHP环境 | clearself的博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -253,11 +258,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-mongo" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-setPHP" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/10/20/mongo/" class="article-date">
-      <time datetime="2017-10-20T08:05:58.000Z" itemprop="datePublished">2017-10-20</time>
+      <a href="/2017/05/24/setPHP/" class="article-date">
+      <time datetime="2017-05-24T01:39:57.000Z" itemprop="datePublished">2017-05-24</time>
 </a>
 
 
@@ -272,7 +277,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      mongo在window下安装配置与启动
+      windows server 2008R2 x64位服务器上搭建PHP环境
     </h1>
   
 
@@ -283,7 +288,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mongo/">mongo</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/服务器搭建PHP环境/">服务器搭建PHP环境</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -293,10 +298,26 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h3 id="mongodb的安装-window下"><a href="#mongodb的安装-window下" class="headerlink" title="mongodb的安装 window下"></a>mongodb的安装 window下</h3><h5 id="在官网上下载zip，这个我装在D盘的mongoDB目录下"><a href="#在官网上下载zip，这个我装在D盘的mongoDB目录下" class="headerlink" title="在官网上下载zip，这个我装在D盘的mongoDB目录下"></a>在官网上下载zip，这个我装在D盘的mongoDB目录下</h5><h5 id="1、在D盘中创建-mongoDB-文件夹然后把下载的包解压后把其中的-bin-文件夹拷贝到创建的-mongoDB-文件夹中，并且将bin文件夹所在路径配置到环境变量PATH中用-号分开"><a href="#1、在D盘中创建-mongoDB-文件夹然后把下载的包解压后把其中的-bin-文件夹拷贝到创建的-mongoDB-文件夹中，并且将bin文件夹所在路径配置到环境变量PATH中用-号分开" class="headerlink" title="1、在D盘中创建 mongoDB 文件夹然后把下载的包解压后把其中的 bin 文件夹拷贝到创建的 mongoDB 文件夹中，并且将bin文件夹所在路径配置到环境变量PATH中用;号分开"></a>1、在D盘中创建 mongoDB 文件夹然后把下载的包解压后把其中的 bin 文件夹拷贝到创建的 mongoDB 文件夹中，并且将bin文件夹所在路径配置到环境变量PATH中用;号分开</h5><h5 id="2、然后在-mongoDB文件夹中创建一个-data-文件夹，再在-data-文件夹中创建-db-文件夹"><a href="#2、然后在-mongoDB文件夹中创建一个-data-文件夹，再在-data-文件夹中创建-db-文件夹" class="headerlink" title="2、然后在 mongoDB文件夹中创建一个 data 文件夹，再在 data 文件夹中创建 db 文件夹"></a>2、然后在 mongoDB文件夹中创建一个 data 文件夹，再在 data 文件夹中创建 db 文件夹</h5><h5 id="3、然后在-mongoDB文件夹中创建一个-log-文件夹，再在-log-文件夹中创建-mongoDB-log文件"><a href="#3、然后在-mongoDB文件夹中创建一个-log-文件夹，再在-log-文件夹中创建-mongoDB-log文件" class="headerlink" title="3、然后在 mongoDB文件夹中创建一个 log 文件夹，再在 log 文件夹中创建 mongoDB.log文件"></a>3、然后在 mongoDB文件夹中创建一个 log 文件夹，再在 log 文件夹中创建 mongoDB.log文件</h5><h5 id="4、然后在-mongoDB文件夹中创建一个-mongodb-config文件-并配置如下图"><a href="#4、然后在-mongoDB文件夹中创建一个-mongodb-config文件-并配置如下图" class="headerlink" title="4、然后在 mongoDB文件夹中创建一个 mongodb.config文件 并配置如下图"></a>4、然后在 mongoDB文件夹中创建一个 mongodb.config文件 并配置如下图</h5><p><img src="https://clearself.github.io/image/mongo_1.png" alt="描述" title="图片描述"></p>
-<h5 id="打开cmd命令行进入到D-MongoDB-bin运行mongod-–config-D-MongoDB-mongodb-config-启动mongo服务"><a href="#打开cmd命令行进入到D-MongoDB-bin运行mongod-–config-D-MongoDB-mongodb-config-启动mongo服务" class="headerlink" title="打开cmd命令行进入到D:\MongoDB\bin运行mongod –config D:\MongoDB\mongodb.config 启动mongo服务"></a>打开cmd命令行进入到D:\MongoDB\bin运行mongod –config D:\MongoDB\mongodb.config 启动mongo服务</h5><p><img src="https://clearself.github.io/image/mongo_2.png" alt="描述" title="图片描述"></p>
-<h5 id="再打开-个cmd命令-运行-mongo就会出现下图所示说明你的mongo已经运行了"><a href="#再打开-个cmd命令-运行-mongo就会出现下图所示说明你的mongo已经运行了" class="headerlink" title="再打开-个cmd命令 运行 mongo就会出现下图所示说明你的mongo已经运行了"></a>再打开-个cmd命令 运行 mongo就会出现下图所示说明你的mongo已经运行了</h5><p><img src="https://clearself.github.io/image/mongo_3.png" alt="描述" title="图片描述"></p>
-
+        <h5 id="1-安装IIS"><a href="#1-安装IIS" class="headerlink" title="1.安装IIS"></a>1.安装IIS</h5><p>  <code>现在windows 相关的软件或组件安装越来越轻松,在些也不作多介绍,接下是重点.</code></p>
+<p><img src="http://img.blog.csdn.net/20160314220851985" alt="描述" title="图片描述"></p>
+<h5 id="2-安装V11"><a href="#2-安装V11" class="headerlink" title="2.安装V11"></a>2.安装V11</h5><p><code>下载地址: http://www.microsoft.com/zh-CN/download/details.aspx?id=30679
+  文件名: vcredist_x64.exe 
+  注：（v11对应版本为Visual C++ Redistributable for Visual Studio 2012,要与php-VC11版本对应若这个不安装正确,或安装不正确,就一直显示是500错误)</code></p>
+<p><img src="http://img.blog.csdn.net/20160314220938048" alt="描述" title="图片描述"></p>
+<h5 id="3-安装CGI"><a href="#3-安装CGI" class="headerlink" title="3.安装CGI"></a>3.安装CGI</h5><p><img src="http://img.blog.csdn.net/20160314221038822" alt="描述" title="图片描述"></p>
+<h5 id="4-安装php"><a href="#4-安装php" class="headerlink" title="4.安装php"></a>4.安装php</h5><p><code>下载地址: http://windows.php.net/download/</code><br><code>使用IIS配置,所以下载 VC11 x64 Non Thread Safe 版本(2014-Jun-25 23:06:26)</code><br>  <code>将PHP5.5.14 解压到D:文件夹名为:php</code><br>       <code>安装:PHPManagerForIIS-1.2.0-x64.msi</code><br>       <code>下载地址: http://www.phpmanager.codeplex.com/releases/view/69115</code><br>       <code>配置PHP与CGI关联  让IIS7.5支持PHP</code><br>      <code>(1).安装phpmanager</code><br>       <code>(2).完装完后,重启IIS即可以看到:</code></p>
+<p><img src="http://img.blog.csdn.net/20160314221407258" alt="描述" title="图片描述"></p>
+<p><code>(3).双击PHP Manager 开始注册PHP路径.</code><br>      <code>选择PHP 文件中的php-cgi.exe</code></p>
+<p><img src="http://img.blog.csdn.net/20160314221453011" alt="描述" title="图片描述"></p>
+<h5 id="配置php-ini文件"><a href="#配置php-ini文件" class="headerlink" title="配置php.ini文件"></a>配置php.ini文件</h5><p><code>修改php.ini-development为php.ini</code><br><code>用记事本打开php.ini</code><br><code>做如下修改：</code><br><code>extension_dir = &quot;D:\php\ext&quot; #设置php模块路径</code><br><code>date.timezone = PRC #设置时区为中国时区</code><br><code>register_globals = On #开启GET数据调用</code><br><code>short_open_tag = On #php支持短标签</code><br><code>cgi.force_redirect = 0 #开启以CGI方式运行php</code><br><code>fastcgi.impersonate = 1;</code><br><code>cgi.rfc2616_headers = 1</code><br><code>以下php扩展模块，根据需要选择开启，取消前面的分号为开始相应扩展模块注（如不确定可以全部去掉）</code><br><img src="http://files.jb51.net/file_images/article/201303/1436.jpg" alt="描述" title="图片描述"></p>
+<h5 id="配置完后需要将php-ini复制一份放到system32目录下重启服务器"><a href="#配置完后需要将php-ini复制一份放到system32目录下重启服务器" class="headerlink" title="配置完后需要将php.ini复制一份放到system32目录下重启服务器"></a>配置完后需要将php.ini复制一份放到system32目录下重启服务器</h5><p> <code>此时PHP配置完成，可以写个php文件试一下
+ 如果出现出现“HTTP 错误 404.2 - Not Found，
+ 由于Web服务器上的“ISAPI和CGI限制”列表设置，
+ 无法提供您请求的页面”错误。如图：</code></p>
+<p><img src="http://img1.ph.126.net/fpjBX80n5sJ7Wwic4IGlJQ==/6597216001703821191.jpg" alt="描述" title="图片描述"></p>
+<h5 id="分析可能原因："><a href="#分析可能原因：" class="headerlink" title="分析可能原因："></a>分析可能原因：</h5><p>  <code>错误提示很明显，就是“ISAPI和CGI限制”的设置问题，
+  修改对应的设置为“允许”即可。如果列表中没有就添加 将cgi.exe文件引进去</code><br><img src="http://img5.ph.126.net/iXB7J9OPrYSfaxNuksLdzA==/6597494178144543105.jpg" alt="描述" title="图片描述"></p>
+<h4 id="配置完毕"><a href="#配置完毕" class="headerlink" title="配置完毕"></a>配置完毕</h4>
       
     </div>
     
@@ -304,13 +325,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/10/20/mongo/">mongo在window下安装配置与启动</a></p>
+        <p><span>本文标题:</span><a href="/2017/05/24/setPHP/">windows server 2008R2 x64位服务器上搭建PHP环境</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">付雷洋</a></p>
-        <p><span>发布时间:</span>2017-10-20, 16:05:58</p>
-        <p><span>最后更新:</span>2017-10-23, 11:16:15</p>
+        <p><span>发布时间:</span>2017-05-24, 09:39:57</p>
+        <p><span>最后更新:</span>2019-07-11, 15:05:04</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/10/20/mongo/" title="mongo在window下安装配置与启动">http://clearself.github.io/2017/10/20/mongo/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://clearself.github.io/2017/10/20/mongo/　　作者: 付雷洋" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/05/24/setPHP/" title="windows server 2008R2 x64位服务器上搭建PHP环境">http://clearself.github.io/2017/05/24/setPHP/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://clearself.github.io/2017/05/24/setPHP/　　作者: 付雷洋" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -323,15 +344,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2019/07/11/ueditor/">
-                    ueditor富文本编辑器前后端分离使用
+                <a href="/2017/07/21/vue/">
+                    VUE优秀UI组件集合
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2017/10/18/express/">
-                    express 生成项目
+                <a href="/2017/05/24/setFtp/">
+                    windows server 2008R2 搭建ftp环境
                 </a>
             </div>
         
@@ -343,7 +364,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#mongodb的安装-window下"><span class="toc-number">1.</span> <span class="toc-text">mongodb的安装 window下</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#在官网上下载zip，这个我装在D盘的mongoDB目录下"><span class="toc-number">1.0.1.</span> <span class="toc-text">在官网上下载zip，这个我装在D盘的mongoDB目录下</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1、在D盘中创建-mongoDB-文件夹然后把下载的包解压后把其中的-bin-文件夹拷贝到创建的-mongoDB-文件夹中，并且将bin文件夹所在路径配置到环境变量PATH中用-号分开"><span class="toc-number">1.0.2.</span> <span class="toc-text">1、在D盘中创建 mongoDB 文件夹然后把下载的包解压后把其中的 bin 文件夹拷贝到创建的 mongoDB 文件夹中，并且将bin文件夹所在路径配置到环境变量PATH中用;号分开</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、然后在-mongoDB文件夹中创建一个-data-文件夹，再在-data-文件夹中创建-db-文件夹"><span class="toc-number">1.0.3.</span> <span class="toc-text">2、然后在 mongoDB文件夹中创建一个 data 文件夹，再在 data 文件夹中创建 db 文件夹</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3、然后在-mongoDB文件夹中创建一个-log-文件夹，再在-log-文件夹中创建-mongoDB-log文件"><span class="toc-number">1.0.4.</span> <span class="toc-text">3、然后在 mongoDB文件夹中创建一个 log 文件夹，再在 log 文件夹中创建 mongoDB.log文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4、然后在-mongoDB文件夹中创建一个-mongodb-config文件-并配置如下图"><span class="toc-number">1.0.5.</span> <span class="toc-text">4、然后在 mongoDB文件夹中创建一个 mongodb.config文件 并配置如下图</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#打开cmd命令行进入到D-MongoDB-bin运行mongod-–config-D-MongoDB-mongodb-config-启动mongo服务"><span class="toc-number">1.0.6.</span> <span class="toc-text">打开cmd命令行进入到D:\MongoDB\bin运行mongod –config D:\MongoDB\mongodb.config 启动mongo服务</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#再打开-个cmd命令-运行-mongo就会出现下图所示说明你的mongo已经运行了"><span class="toc-number">1.0.7.</span> <span class="toc-text">再打开-个cmd命令 运行 mongo就会出现下图所示说明你的mongo已经运行了</span></a></li></ol></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-安装IIS"><span class="toc-number">1.</span> <span class="toc-text">1.安装IIS</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-安装V11"><span class="toc-number">2.</span> <span class="toc-text">2.安装V11</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-安装CGI"><span class="toc-number">3.</span> <span class="toc-text">3.安装CGI</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-安装php"><span class="toc-number">4.</span> <span class="toc-text">4.安装php</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#配置php-ini文件"><span class="toc-number">5.</span> <span class="toc-text">配置php.ini文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#配置完后需要将php-ini复制一份放到system32目录下重启服务器"><span class="toc-number">6.</span> <span class="toc-text">配置完后需要将php.ini复制一份放到system32目录下重启服务器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#分析可能原因："><span class="toc-number">7.</span> <span class="toc-text">分析可能原因：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#配置完毕"><span class="toc-number"></span> <span class="toc-text">配置完毕</span></a>
         
     </div>
     <style>
@@ -379,7 +400,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"mongo在window下安装配置与启动　| clearself的博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"windows server 2008R2 x64位服务器上搭建PHP环境　| clearself的博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -399,7 +420,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2019/07/11/ueditor/" title="上一篇: ueditor富文本编辑器前后端分离使用">
+            <a href="/2017/07/21/vue/" title="上一篇: VUE优秀UI组件集合">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -407,7 +428,7 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2017/10/18/express/" title="下一篇: express 生成项目">
+            <a href="/2017/05/24/setFtp/" title="下一篇: windows server 2008R2 搭建ftp环境">
                 <i class="fa fa-angle-right"></i>
             </a>
         

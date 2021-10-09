@@ -31,14 +31,17 @@ const renderQianKun = (options) => {
     });
     var sweep = document.getElementById('sweep')
     var file = document.getElementById('file')
+    var phoneScan = document.getElementById('phoneScan')
     // 扫一扫
     sweep.onclick = function(){
         result.value = '';
+        phoneScan.style.display = 'none'
         QrCode.sweep();
     }
     // 从相册选择
     file.onchange = function(){
         result.value = '';
+        phoneScan.style.display = 'none'
         QrCode.upload();
     }
 
@@ -75,14 +78,17 @@ const render = () => {
       });
       var sweep = document.getElementById('sweep')
       var file = document.getElementById('file')
+      var phoneScan = document.getElementById('phoneScan')
       // 扫一扫
       sweep.onclick = function(){
           result.value = '';
+          phoneScan.style.display = 'none'
           QrCode.sweep();
       }
       // 从相册选择
       file.onchange = function(){
           result.value = '';
+          phoneScan.style.display = 'none'
           QrCode.upload();
       }
   };

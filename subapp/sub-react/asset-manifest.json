@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/subapp/sub-react/static/css/main.8c153d05.chunk.css",
-    "main.js": "/subapp/sub-react/static/js/main.6f147d44.chunk.js",
-    "main.js.map": "/subapp/sub-react/static/js/main.6f147d44.chunk.js.map",
+    "main.css": "/subapp/sub-react/static/css/main.f9df2fd8.chunk.css",
+    "main.js": "/subapp/sub-react/static/js/main.81b8d3fb.chunk.js",
+    "main.js.map": "/subapp/sub-react/static/js/main.81b8d3fb.chunk.js.map",
     "runtime-main.js": "/subapp/sub-react/static/js/runtime-main.09e55165.js",
     "runtime-main.js.map": "/subapp/sub-react/static/js/runtime-main.09e55165.js.map",
-    "static/js/2.ab785b48.chunk.js": "/subapp/sub-react/static/js/2.ab785b48.chunk.js",
-    "static/js/2.ab785b48.chunk.js.map": "/subapp/sub-react/static/js/2.ab785b48.chunk.js.map",
+    "static/css/2.74ee1fad.chunk.css": "/subapp/sub-react/static/css/2.74ee1fad.chunk.css",
+    "static/js/2.c0137b54.chunk.js": "/subapp/sub-react/static/js/2.c0137b54.chunk.js",
+    "static/js/2.c0137b54.chunk.js.map": "/subapp/sub-react/static/js/2.c0137b54.chunk.js.map",
     "index.html": "/subapp/sub-react/index.html",
-    "precache-manifest.3c61f5859baa44ce3d7248f4404a49ed.js": "/subapp/sub-react/precache-manifest.3c61f5859baa44ce3d7248f4404a49ed.js",
+    "precache-manifest.d342b9fb479afc2b0a7aaffaf07894e6.js": "/subapp/sub-react/precache-manifest.d342b9fb479afc2b0a7aaffaf07894e6.js",
     "service-worker.js": "/subapp/sub-react/service-worker.js",
-    "static/css/main.8c153d05.chunk.css.map": "/subapp/sub-react/static/css/main.8c153d05.chunk.css.map",
-    "static/js/2.ab785b48.chunk.js.LICENSE.txt": "/subapp/sub-react/static/js/2.ab785b48.chunk.js.LICENSE.txt"
+    "static/css/2.74ee1fad.chunk.css.map": "/subapp/sub-react/static/css/2.74ee1fad.chunk.css.map",
+    "static/css/main.f9df2fd8.chunk.css.map": "/subapp/sub-react/static/css/main.f9df2fd8.chunk.css.map",
+    "static/js/2.c0137b54.chunk.js.LICENSE.txt": "/subapp/sub-react/static/js/2.c0137b54.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/subapp/sub-react/static/media/element-icons.d2f69a92.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.09e55165.js",
-    "static/js/2.ab785b48.chunk.js",
-    "static/css/main.8c153d05.chunk.css",
-    "static/js/main.6f147d44.chunk.js"
+    "static/css/2.74ee1fad.chunk.css",
+    "static/js/2.c0137b54.chunk.js",
+    "static/css/main.f9df2fd8.chunk.css",
+    "static/js/main.81b8d3fb.chunk.js"
   ]
 }
